@@ -1,7 +1,7 @@
 // Complete Guide to C++ Programming Foundations
 // Exercise 02_08
 // Enumerations, by Eduardo Corpeño 
-
+// completed by me
 #include <iostream>
 #include <cstdint>
 
