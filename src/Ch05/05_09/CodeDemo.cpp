@@ -15,7 +15,7 @@ struct Resource{
 double CalculateTotalCost(std::vector<Resource> resources){
     double result = 0.0;
     
-    for (auto x : resources){
+    for (const auto& x : resources){
         switch(x.type){
             case 'B':
                 result += x.baseCost * 1.05;
