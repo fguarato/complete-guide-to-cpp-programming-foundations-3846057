@@ -21,9 +21,7 @@ int main(){
     int a = 9, b;
     b = square(a);
     std::cout << "a = " << a << ", b = " << b << std::endl;
-    int* x = &a;
-    int* y = &b;
-    swap(x, y);
+    swap(&a, &b);
     std::cout << "a = " << a << ", b = " << b << std::endl;
     // TODO: swap
     //std::cout << "a = " << a << ", b = " << b << std::endl;
