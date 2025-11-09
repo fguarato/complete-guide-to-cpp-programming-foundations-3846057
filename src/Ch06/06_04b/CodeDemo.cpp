@@ -28,6 +28,6 @@ int calculateScore(const int& baseScore, const int& multiplayer){
     return baseScore * multiplayer;
 }
 
-void displayScore(std::string& name, int score){
+void displayScore(const std::string& name, int score){
     std::cout << name << " scored " << score << " points." << std::endl;
 }
