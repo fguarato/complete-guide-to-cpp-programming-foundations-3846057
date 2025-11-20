@@ -74,17 +74,30 @@ int main(){
     Inventory myInventory(5); 
     
     // Add 5 items
+    myInventory.addItem("Dio cane");
+    myInventory.addItem("Dio merda");
+    myInventory.addItem("Dio boia");
+    myInventory.addItem("Dio porco");
+    myInventory.addItem("Dio stronzo");
 
     // Display current inventory
     myInventory.displayInventory(); 
 
     // Try to add another item when inventory is full
+    myInventory.addItem("Madonna puttana");
 
     // Remove an item
+    myInventory.removeItem("Dio merda");
 
     // Display the item count
+    int countItems = myInventory.getItemCount();
+    std::cout << "Number of items is: " << countItems << std::endl;
 
     // Access item by index
+    int strIndex = 2;
+    std::string strItem;
+    strItem = myInventory.getItem(strIndex);
+    std::cout << "Item at index " << strIndex << " is: " << strItem << std::endl;
 
     // Display final state of inventory
     myInventory.displayInventory();
