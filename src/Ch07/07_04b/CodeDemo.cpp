@@ -10,14 +10,13 @@
 class Inventory{
 public:
     // Default Constructor
-    Inventory(){
+    Inventory() : capacity(10){
         capacity = 10;
         items = new std::vector<std::string>();
     }
 
     // Overloaded Constructor
-    Inventory(int capacity){
-        this->capacity = capacity;
+    Inventory(int capacity_i) : capacity(capacity_i){
         items = new std::vector<std::string>();
     }
 
@@ -66,7 +65,7 @@ public:
         std::cout << " ]" << std::endl;
     }
 
-private:
+private:      // Data members
     std::vector<std::string> *items; // Pointer to a vector of items
     int capacity; // Maximum number of items allowed
 };
